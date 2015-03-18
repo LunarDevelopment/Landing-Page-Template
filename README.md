@@ -1,6 +1,4 @@
-
-
-AngularJS-Website-Template
+Landing-Page-Template
 =====================================
 
 An AngularJS Based website template focused on reusability and room for its functionality to be expanded. 

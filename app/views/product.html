@@ -1,0 +1,13 @@
+<div style="width:100%">
+    <div class="projectHead {{product.class}}">
+        <div class="wrap">
+            <div class="text left">
+                <h1>{{product.title}}</h1>
+                <p ng-repeat="sentence in product.description track by $index">{{sentence}}</p>
+            </div>
+            <img class="picture right" ng-src="{{product.imgsrc}}" />
+            <div style="clear:both"></div>
+        </div>
+    </div>
+    <ng-include src="'footer.html'"></ng-include>
+</div>

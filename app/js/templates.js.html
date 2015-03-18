@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for C:\MAMP\htdocs\Rickard\app\js\templates.js</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="../../../../../../prettify.css">
+
+    <link rel="stylesheet" href="../../../../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header high">
+    <h1>Code coverage report for <span class="entity">C:\MAMP\htdocs\Rickard\app\js\templates.js</span></h1>
+    <h2>
+        
+        Statements: <span class="metric">100% <small>(11 / 11)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        
+        
+        Branches: <span class="metric">100% <small>(0 / 0)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        
+        
+        Functions: <span class="metric">100% <small>(1 / 1)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        
+        
+        Lines: <span class="metric">100% <small>(10 / 10)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../../../../index.html">All files</a> &#187; <a href="index.html">C:/MAMP/htdocs/Rickard/app/js/</a> &#187; templates.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10</td><td class="line-coverage"><span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-yes">7</span></td><td class="text"><pre class="prettyprint lang-js">angular.module("templates", []).run(["$templateCache", function($templateCache) {$templateCache.put("about.html","&lt;div style=\"width:100%\"&gt;\r\n    &lt;div class=\"paddRow aboutRow bannerPadding\"&gt;\r\n        &lt;div class=\"wrap\"&gt;\r\n            &lt;div class=\"head\"&gt;{{headInfo.title}}&lt;/div&gt;\r\n            &lt;p ng-repeat=\"paragraph in headInfo.description track by $index\"&gt;{{paragraph}}&lt;/p&gt;\r\n        &lt;/div&gt;\r\n    &lt;/div&gt;\r\n\r\n    &lt;div class=\"subPageBody\"&gt;\r\n        &lt;div class=\"wrap about\"&gt;\r\n            &lt;div class=\"head\"&gt;Additional information&lt;/div&gt;\r\n\r\n            &lt;section ng-repeat=\'info in additionalInfo\'&gt;\r\n                &lt;div class=\"image\" ng-class-odd=\"\'flRight\'\" ng-class-even=\"\'flLeft\'\"&gt;\r\n                    &lt;img src=\"{{info.imgsrc}}\" class=\"abIcon\"&gt;\r\n                &lt;/div&gt;\r\n                &lt;div class=\"txt\" ng-class-odd=\"\'flLeft\'\" ng-class-even=\"\'flRight\'\"&gt;\r\n                    &lt;h2 class=\"subHead\"&gt;{{info.title}}&lt;/h2&gt;\r\n                    &lt;p ng-repeat=\"paragraph in info.description track by $index\"&gt;{{paragraph}}&lt;/p&gt;\r\n                &lt;/div&gt;\r\n                &lt;div style=\"clear:both\"&gt;&lt;/div&gt;\r\n            &lt;/section&gt;\r\n\r\n        &lt;/div&gt;\r\n    &lt;/div&gt;\r\n    &lt;ng-include src=\"\'footer.html\'\"&gt;&lt;/ng-include&gt;\r\n&lt;/div&gt;");
+$templateCache.put("footer.html","&lt;footer&gt;\r\n        &lt;div class=\"copyright\"&gt;&lt;a href=\"{{company.companyhref}}\" target=\"_blank\"&gt;Copyright © {{company.name}} 2015&lt;/a&gt;\r\n        &lt;/div&gt;\r\n&lt;/footer&gt;");
+$templateCache.put("index.html","&lt;div style=\"width:100%\"&gt;\r\n      &lt;a ng-repeat=\"product in products\" class=\"projectObj {{product.class}}\" ng-click=\"selectProduct(product.id)\"&gt;\r\n        &lt;div class=\"wrap\"&gt;\r\n            &lt;div class=\"name\"&gt;{{product.title}}&lt;/div&gt;\r\n            &lt;img class=\"img\" ng-src=\"{{product.imgsrc}}\" /&gt;\r\n        &lt;/div&gt;\r\n    &lt;/a&gt;\r\n    &lt;ng-include src=\"\'footer.html\'\"&gt;&lt;/ng-include&gt;\r\n&lt;/div&gt;");
+$templateCache.put("menu.html","&lt;header&gt;\r\n    &lt;div class=\"wrap\"&gt;\r\n        &lt;!-- logo --&gt;\r\n        &lt;a ng-href=\"app/home\"&gt;&lt;img class=\"logo\" src=\"{{company.companylogosrc}}\" /&gt;\r\n        &lt;/a&gt;\r\n\r\n        &lt;!-- navigation menu --&gt;\r\n        &lt;nav&gt;\r\n            &lt;ul&gt;\r\n                &lt;li&gt;&lt;a id=\"workBtn\" ng-href=\"app/home\" ng-class=\"{activeSmall:part == \'projects\'}\"&gt;Our Projects&lt;/a&gt;\r\n                &lt;/li&gt;\r\n                &lt;li&gt;&lt;a id=\"privacyBtn\" ng-href=\"app/privacy\" ng-class=\"{activeSmall:part == \'privacy\'}\"&gt;Privacy &amp;amp; Terms&lt;/a&gt;\r\n                &lt;/li&gt;\r\n                &lt;li&gt;&lt;a id=\"aboutBtn\" ng-href=\"app/about\" ng-class=\"{activeSmall:part == \'about\'}\"&gt;About&lt;/a&gt;\r\n                &lt;/li&gt;\r\n                &lt;li style=\"margin-right:0px\"&gt;&lt;a id=\"contactBtn\" class=\"active\" slide-toggle=\"#contact_form\" ng-class=\"{ active: contact_form }\" &gt;Contact Us&lt;/a&gt;\r\n                &lt;/li&gt;\r\n            &lt;/ul&gt;\r\n        &lt;/nav&gt;\r\n    &lt;/div&gt;\r\n&lt;/header&gt;\r\n\r\n&lt;!-- contact us form  --&gt;\r\n&lt;div class=\"paddRow contactRow slideable\" id=\"contact_form\"&gt;\r\n    &lt;div class=\"wrap\"&gt;\r\n        &lt;div class=\"head\"&gt;Contact Us&lt;/div&gt;\r\n        &lt;img class=\"close\" src=\"images/close.png\" slide-toggle=\"#contact_form\" /&gt;\r\n        &lt;form ng-submit=\"save()\" class=\"contactForm\" name=\"form\" ng-hide=\"loaded\"&gt;\r\n            &lt;input class=\"input\" required=\"required\" type=\"text\" name=\"name\" placeholder=\"Your Name\" ng-model=\"message.name\" /&gt;\r\n            &lt;input class=\"input email\" required=\"required\" type=\"email\" name=\"email\" value=\"\" placeholder=\"Your Email\" ng-model=\"message.email\" /&gt;\r\n            &lt;br /&gt;\r\n            &lt;textarea class=\"textarea\" rows=\"5\" required=\"required\" placeholder=\"Your Message\" ng-model=\"message.text\"&gt;&lt;/textarea&gt;\r\n            &lt;button class=\"btn green\"&gt;Send Message&lt;/button&gt;\r\n        &lt;/form&gt;\r\n\r\n        &lt;!-- contact us form response messages --&gt;\r\n        &lt;div ng-show=\"process\" style=\"text-align:center\"&gt;\r\n            &lt;img class=\"loader\" src=\"images/loader.png\" /&gt;\r\n        &lt;/div&gt;\r\n        &lt;div ng-show=\"success\"&gt;\r\n            &lt;p&gt;Your message has been sent, thank you.&lt;/p&gt;\r\n        &lt;/div&gt;\r\n    &lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;!-- main content --&gt;\r\n&lt;div style=\"position:relative\"&gt;\r\n    &lt;div class=\"page {{ pageClass }}\" style=\"width:100%\" ui-view ng-view ng-animate=\"{enter: \'view-enter\', leave: \'view-leave\'}\"&gt;&lt;/div&gt;\r\n&lt;/div&gt;");
+$templateCache.put("privacy.html","&lt;div style=\"width:100%\"&gt;\r\n    &lt;div class=\"paddRow aboutRow bannerPadding\"&gt;\r\n        &lt;div class=\"wrap\"&gt;\r\n            &lt;div class=\"head\"&gt;{{headInfo.title}}&lt;/div&gt;\r\n            &lt;p ng-repeat=\"paragraph in headInfo.description track by $index\"&gt;{{paragraph}}&lt;/p&gt;\r\n        &lt;/div&gt;\r\n    &lt;/div&gt;\r\n    \r\n    &lt;div class=\"subPageBody\"&gt;\r\n        &lt;div class=\"wrap about\"&gt;\r\n            &lt;div class=\"head\"&gt;Other information&lt;/div&gt;\r\n\r\n            &lt;section ng-repeat=\'info in additionalInfo\'&gt;\r\n                &lt;div class=\"image\" ng-class-odd=\"\'flRight\'\" ng-class-even=\"\'flLeft\'\"&gt;\r\n                    &lt;img src=\"{{info.imgsrc}}\" class=\"abIcon\"&gt;\r\n                &lt;/div&gt;\r\n                &lt;div class=\"txt\" ng-class-odd=\"\'flLeft\'\" ng-class-even=\"\'flRight\'\"&gt;\r\n                    &lt;h2 class=\"subHead\"&gt;{{info.title}}&lt;/h2&gt;\r\n                    &lt;p ng-repeat=\"paragraph in info.description track by $index\"&gt;{{paragraph}}&lt;/p&gt;\r\n                &lt;/div&gt;\r\n                &lt;div style=\"clear:both\"&gt;&lt;/div&gt;\r\n            &lt;/section&gt;\r\n            \r\n        &lt;/div&gt;\r\n    &lt;/div&gt;\r\n    &lt;ng-include src=\"\'footer.html\'\"&gt;&lt;/ng-include&gt;\r\n&lt;/div&gt;");
+$templateCache.put("product.html","&lt;div style=\"width:100%\"&gt;\r\n    &lt;div class=\"projectHead {{product.class}}\"&gt;\r\n        &lt;div class=\"wrap\"&gt;\r\n            &lt;div class=\"text left\"&gt;\r\n                &lt;h1&gt;{{product.title}}&lt;/h1&gt;\r\n                &lt;p ng-repeat=\"sentence in product.description track by $index\"&gt;{{sentence}}&lt;/p&gt;\r\n            &lt;/div&gt;\r\n            &lt;img class=\"picture right\" ng-src=\"{{product.imgsrc}}\" /&gt;\r\n            &lt;div style=\"clear:both\"&gt;&lt;/div&gt;\r\n        &lt;/div&gt;\r\n    &lt;/div&gt;\r\n    &lt;ng-include src=\"\'footer.html\'\"&gt;&lt;/ng-include&gt;\r\n&lt;/div&gt;");
+$templateCache.put("product1.html","&lt;div style=\"width:100%\"&gt;\r\n    &lt;div class=\"projectHead product\"&gt;\r\n        &lt;div class=\"wrap\"&gt;\r\n            &lt;div class=\"text left\"&gt;\r\n                &lt;h1&gt;Product 1 page&lt;/h1&gt;\r\n                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et ligula accumsan, pharetra nibh nec, facilisis nulla. In pretium semper venenatis. In adipiscing augue elit, at venenatis enim suscipit a. Fusce vitae justo tristique, ultrices mi metus.&lt;/p&gt;\r\n                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et ligula accumsan, pharetra nibh nec, facilisis nulla. In pretium semper venenatis. In adipiscing augue elit, at venenatis enim suscipit a. Fusce vitae justo tristique, ultrices mi metus.&lt;/p&gt;\r\n                &lt;a class=\"btn\" href=\"javascript: void(0)\"&gt;download the app&lt;/a&gt;\r\n            &lt;/div&gt;\r\n            &lt;img class=\"picture right\" src=\"images/element.png\" /&gt;\r\n            &lt;div style=\"clear:both\"&gt;&lt;/div&gt;\r\n        &lt;/div&gt;\r\n    &lt;/div&gt;\r\n    &lt;ng-include src=\"\'footer.html\'\"&gt;&lt;/ng-include&gt;\r\n&lt;/div&gt;");
+$templateCache.put("product2.html","&lt;div style=\"width:100%\"&gt;\r\n    &lt;div class=\"projectHead product\"&gt;\r\n        &lt;div class=\"wrap\"&gt;\r\n            &lt;div class=\"text left\"&gt;\r\n                &lt;h1&gt;Product 2 page&lt;/h1&gt;\r\n                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et ligula accumsan, pharetra nibh nec, facilisis nulla. In pretium semper venenatis. In adipiscing augue elit, at venenatis enim suscipit a. Fusce vitae justo tristique, ultrices mi metus.&lt;/p&gt;\r\n                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et ligula accumsan, pharetra nibh nec, facilisis nulla. In pretium semper venenatis. In adipiscing augue elit, at venenatis enim suscipit a. Fusce vitae justo tristique, ultrices mi metus.&lt;/p&gt;\r\n                &lt;a class=\"btn\" href=\"javascript: void(0)\"&gt;download the app&lt;/a&gt;\r\n            &lt;/div&gt;\r\n            &lt;img class=\"picture right\" src=\"images/element.png\" /&gt;\r\n            &lt;div style=\"clear:both\"&gt;&lt;/div&gt;\r\n        &lt;/div&gt;\r\n    &lt;/div&gt;\r\n    &lt;ng-include src=\"\'footer.html\'\"&gt;&lt;/ng-include&gt;\r\n&lt;/div&gt;");
+$templateCache.put("product3.html","&lt;div style=\"width:100%\"&gt;\r\n    &lt;div class=\"projectHead product\"&gt;\r\n        &lt;div class=\"wrap\"&gt;\r\n            &lt;div class=\"text left\"&gt;\r\n                &lt;h1&gt;Product 3 page&lt;/h1&gt;\r\n                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et ligula accumsan, pharetra nibh nec, facilisis nulla. In pretium semper venenatis. In adipiscing augue elit, at venenatis enim suscipit a. Fusce vitae justo tristique, ultrices mi metus.&lt;/p&gt;\r\n                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et ligula accumsan, pharetra nibh nec, facilisis nulla. In pretium semper venenatis. In adipiscing augue elit, at venenatis enim suscipit a. Fusce vitae justo tristique, ultrices mi metus.&lt;/p&gt;\r\n                &lt;a class=\"btn\" href=\"javascript: void(0)\"&gt;download the app&lt;/a&gt;\r\n            &lt;/div&gt;\r\n            &lt;img class=\"picture right\" src=\"images/element.png\" /&gt;\r\n            &lt;div style=\"clear:both\"&gt;&lt;/div&gt;\r\n        &lt;/div&gt;\r\n    &lt;/div&gt;\r\n    &lt;ng-include src=\"\'footer.html\'\"&gt;&lt;/ng-include&gt;\r\n&lt;/div&gt;");
+$templateCache.put("product4.html","&lt;div style=\"width:100%\"&gt;\r\n    &lt;div class=\"projectHead product\"&gt;\r\n        &lt;div class=\"wrap\"&gt;\r\n            &lt;div class=\"text left\"&gt;\r\n                &lt;h1&gt;Product 4 page&lt;/h1&gt;\r\n                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et ligula accumsan, pharetra nibh nec, facilisis nulla. In pretium semper venenatis. In adipiscing augue elit, at venenatis enim suscipit a. Fusce vitae justo tristique, ultrices mi metus.&lt;/p&gt;\r\n                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et ligula accumsan, pharetra nibh nec, facilisis nulla. In pretium semper venenatis. In adipiscing augue elit, at venenatis enim suscipit a. Fusce vitae justo tristique, ultrices mi metus.&lt;/p&gt;\r\n                &lt;a class=\"btn\" href=\"javascript: void(0)\"&gt;download the app&lt;/a&gt;\r\n            &lt;/div&gt;\r\n            &lt;img class=\"picture right\" src=\"images/element.png\" /&gt;\r\n            &lt;div style=\"clear:both\"&gt;&lt;/div&gt;\r\n        &lt;/div&gt;\r\n    &lt;/div&gt;\r\n    &lt;ng-include src=\"\'footer.html\'\"&gt;&lt;/ng-include&gt;\r\n&lt;/div&gt;");}]);</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed Mar 18 2015 09:16:52 GMT+0000 (GMT Standard Time)</div>
+</div>
+
+<script src="../../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+
+<script src="../../../../../../sorter.js"></script>
+</body>
+</html>

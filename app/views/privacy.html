@@ -1,0 +1,27 @@
+<div style="width:100%">
+    <div class="paddRow aboutRow bannerPadding">
+        <div class="wrap">
+            <div class="head">{{headInfo.title}}</div>
+            <p ng-repeat="paragraph in headInfo.description track by $index">{{paragraph}}</p>
+        </div>
+    </div>
+    
+    <div class="subPageBody">
+        <div class="wrap about">
+            <div class="head">Other information</div>
+
+            <section ng-repeat='info in additionalInfo'>
+                <div class="image" ng-class-odd="'flRight'" ng-class-even="'flLeft'">
+                    <img src="{{info.imgsrc}}" class="abIcon">
+                </div>
+                <div class="txt" ng-class-odd="'flLeft'" ng-class-even="'flRight'">
+                    <h2 class="subHead">{{info.title}}</h2>
+                    <p ng-repeat="paragraph in info.description track by $index">{{paragraph}}</p>
+                </div>
+                <div style="clear:both"></div>
+            </section>
+            
+        </div>
+    </div>
+    <ng-include src="'footer.html'"></ng-include>
+</div>

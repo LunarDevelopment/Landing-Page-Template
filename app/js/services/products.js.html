@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for C:\MAMP\htdocs\Rickard\app\js\services\products.js</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="../../../../../../../prettify.css">
+
+    <link rel="stylesheet" href="../../../../../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header low">
+    <h1>Code coverage report for <span class="entity">C:\MAMP\htdocs\Rickard\app\js\services\products.js</span></h1>
+    <h2>
+        
+        Statements: <span class="metric">17.65% <small>(3 / 17)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        
+        
+        Branches: <span class="metric">0% <small>(0 / 2)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        
+        
+        Functions: <span class="metric">0% <small>(0 / 5)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        
+        
+        Lines: <span class="metric">17.65% <small>(3 / 17)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../../../../../index.html">All files</a> &#187; <a href="index.html">C:/MAMP/htdocs/Rickard/app/js/services/</a> &#187; products.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
+&nbsp;
+var servicesModule = require('./_index.js');
+&nbsp;
+/**
+ * @ngInject
+ */
+<span class="fstat-no" title="function not covered" >function ProductsService($q, $http, $filter) {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    var selectedId = ''</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    var productList = [{</span>
+        id: "1",
+        name: "product_1",
+        title: "The Grand Product #1",
+        description: ["Wayfarers Blue Bottle narwhal, chillwave mustache ethical Pitchfork Pinterest slow-carb viral before they sold out salvia brunch. Shabby chic mlkshk cred banjo, tote bag health goth iPhone American Apparel Intelligentsia mumblecore.", "Wayfarers Blue Bottle narwhal, chillwave mustache ethical Pitchfork Pinterest slow-carb viral before they sold out salvia brunch. Shabby chic mlkshk cred banjo, tote bag health goth iPhone American Apparel Intelligentsia mumblecore."],
+        class: "turquoise",
+        href: "app/project/product1",
+        imgsrc: "images/ang.png"
+    }, {
+        id: "2",
+        name: "product_2",
+        title: "The Grand Product #2",
+        description: ["Wayfarers Intelligentsia mumblecore.", "Wayfarers Blue Bottle narwhal, chillwave mustache ethical Pitchfork Pinterest slow-carb viral before they sold out salvia brunch. Shabby chic mlkshk cred banjo, tote bag health goth iPhone American Apparel Intelligentsia mumblecore."],
+        class: "purple",
+        href: "app/project/product2",
+        imgsrc: "images/angular.png"
+    }, {
+        id: "3",
+        name: "product_3",
+        title: "The Grand Product #3",
+        description: ["Pitchfork Pinterest slow-carb viral before they sold out salvia brunch. Shabby chic mlkshk cred banjo, tote bag health goth iPhone American Apparel Intelligentsia mumblecore.", "Wayfarers Blue Bottle narwhal, Shabby chic mlkshk cred banjo, tote bag health goth iPhone American Apparel Intelligentsia mumblecore."],
+        class: "orange",
+        href: "app/project/product3",
+        imgsrc: "images/browserify.png"
+    }, {
+        id: "4",
+        name: "product_4",
+        title: "The Grand Product #4",
+        description: ["Wayfarers Blue Bottle narwhal, chillwave mustache ethical Pitchfork Pinterest slow-carb viral before they ia brunch. Shabby chic mlkshk cred banjo, tote bag health goth iPhone American Apparel Intelligentsia mumblecore.", "Wayfarers Blue Bottle narwhal, chillwave mustache ethical Pitchfork Pinterest slow-carb viral before they sold out salvia brunch. Shabby chre."],
+        class: "pink",
+        href: "app/project/product4",
+        imgsrc: "images/element.png"
+    }];
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    var addProduct = <span class="fstat-no" title="function not covered" >function (newObj) {</span></span>
+<span class="cstat-no" title="statement not covered" >        productList.push(newObj);</span>
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    var getProducts = <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >        return productList;</span>
+    }
+<span class="cstat-no" title="statement not covered" >    var setId = <span class="fstat-no" title="function not covered" >function (data) {</span></span>
+<span class="cstat-no" title="statement not covered" >        selectedId = data;</span>
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    var getSelectedProd = <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >        var found = $filter('filter')(productList, {</span>
+            id: selectedId
+        }, true);
+<span class="cstat-no" title="statement not covered" >        if (found.length) {</span>
+<span class="cstat-no" title="statement not covered" >            return found[0];</span>
+        } else {
+<span class="cstat-no" title="statement not covered" >            return '0';</span>
+        }
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    return {</span>
+        addProduct: addProduct,
+        getProducts: getProducts,
+        setId: setId,
+        getSelectedProd: getSelectedProd
+    };
+&nbsp;
+}
+&nbsp;
+servicesModule.service('ProductsService', ProductsService);</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed Mar 18 2015 09:16:52 GMT+0000 (GMT Standard Time)</div>
+</div>
+
+<script src="../../../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+
+<script src="../../../../../../../sorter.js"></script>
+</body>
+</html>

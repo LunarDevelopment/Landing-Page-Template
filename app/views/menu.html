@@ -1,0 +1,48 @@
+<header>
+    <div class="wrap">
+        <!-- logo -->
+        <a ng-href="app/home"><img class="logo" src="{{company.companylogosrc}}" />
+        </a>
+
+        <!-- navigation menu -->
+        <nav>
+            <ul>
+                <li><a id="workBtn" ng-href="app/home" ng-class="{activeSmall:part == 'projects'}">Our Projects</a>
+                </li>
+                <li><a id="privacyBtn" ng-href="app/privacy" ng-class="{activeSmall:part == 'privacy'}">Privacy &amp; Terms</a>
+                </li>
+                <li><a id="aboutBtn" ng-href="app/about" ng-class="{activeSmall:part == 'about'}">About</a>
+                </li>
+                <li style="margin-right:0px"><a id="contactBtn" class="active" slide-toggle="#contact_form" ng-class="{ active: contact_form }" >Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- contact us form  -->
+<div class="paddRow contactRow slideable" id="contact_form">
+    <div class="wrap">
+        <div class="head">Contact Us</div>
+        <img class="close" src="images/close.png" slide-toggle="#contact_form" />
+        <form ng-submit="save()" class="contactForm" name="form" ng-hide="loaded">
+            <input class="input" required="required" type="text" name="name" placeholder="Your Name" ng-model="message.name" />
+            <input class="input email" required="required" type="email" name="email" value="" placeholder="Your Email" ng-model="message.email" />
+            <br />
+            <textarea class="textarea" rows="5" required="required" placeholder="Your Message" ng-model="message.text"></textarea>
+            <button class="btn green">Send Message</button>
+        </form>
+
+        <!-- contact us form response messages -->
+        <div ng-show="process" style="text-align:center">
+            <img class="loader" src="images/loader.png" />
+        </div>
+        <div ng-show="success">
+            <p>Your message has been sent, thank you.</p>
+        </div>
+    </div>
+</div>
+<!-- main content -->
+<div style="position:relative">
+    <div class="page {{ pageClass }}" style="width:100%" ui-view ng-view ng-animate="{enter: 'view-enter', leave: 'view-leave'}"></div>
+</div>

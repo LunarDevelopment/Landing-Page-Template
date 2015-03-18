@@ -1,0 +1,33 @@
+[{
+        id: "1",
+        name: "product_1",
+        title: "The Grand Product #1",
+        description: ["Wayfarers Blue Bottle narwhal, chillwave mustache ethical Pitchfork Pinterest slow-carb viral before they sold out salvia brunch. Shabby chic mlkshk cred banjo, tote bag health goth iPhone American Apparel Intelligentsia mumblecore.", "Wayfarers Blue Bottle narwhal, chillwave mustache ethical Pitchfork Pinterest slow-carb viral before they sold out salvia brunch. Shabby chic mlkshk cred banjo, tote bag health goth iPhone American Apparel Intelligentsia mumblecore."],
+        class: "product1",
+        href: "app/project/product1",
+        imgsrc: "images/ang.png"
+    }, {
+        id: "2",
+        name: "product_2",
+        title: "The Grand Product #2",
+        description: ["Wayfarers Intelligentsia mumblecore.", "Wayfarers Blue Bottle narwhal, chillwave mustache ethical Pitchfork Pinterest slow-carb viral before they sold out salvia brunch. Shabby chic mlkshk cred banjo, tote bag health goth iPhone American Apparel Intelligentsia mumblecore."],
+        class: "product2",
+        href: "app/project/product2",
+        imgsrc: "images/angular.png"
+    }, {
+        id: "3",
+        name: "product_3",
+        title: "The Grand Product #3",
+        description: ["Pitchfork Pinterest slow-carb viral before they sold out salvia brunch. Shabby chic mlkshk cred banjo, tote bag health goth iPhone American Apparel Intelligentsia mumblecore.", "Wayfarers Blue Bottle narwhal, Shabby chic mlkshk cred banjo, tote bag health goth iPhone American Apparel Intelligentsia mumblecore."],
+        class: "product3",
+        href: "app/project/product3",
+        imgsrc: "images/browserify.png"
+    }, {
+        id: "4",
+        name: "product_4",
+        title: "The Grand Product #4",
+        description: ["Wayfarers Blue Bottle narwhal, chillwave mustache ethical Pitchfork Pinterest slow-carb viral before they ia brunch. Shabby chic mlkshk cred banjo, tote bag health goth iPhone American Apparel Intelligentsia mumblecore.", "Wayfarers Blue Bottle narwhal, chillwave mustache ethical Pitchfork Pinterest slow-carb viral before they sold out salvia brunch. Shabby chre."],
+        class: "product4",
+        href: "app/project/product4",
+        imgsrc: "images/element.png"
+    }]

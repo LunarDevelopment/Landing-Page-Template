@@ -1,0 +1,9 @@
+<div style="width:100%">
+      <a ng-repeat="product in products" class="projectObj {{product.class}}" ng-click="selectProduct(product.id)">
+        <div class="wrap">
+            <div class="name">{{product.title}}</div>
+            <img class="img" ng-src="{{product.imgsrc}}" />
+        </div>
+    </a>
+    <ng-include src="'footer.html'"></ng-include>
+</div>

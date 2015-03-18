@@ -1,0 +1,94 @@
+.turquoise {
+    background-color: $turquoise
+}
+
+.purple {
+    background-color: $purple
+}
+
+.pink {
+    background-color: $pink
+}
+
+.orange {
+    background-color: $orange
+}
+
+.blue {
+    background-color: $blue
+}
+
+.green {
+    background-color: $green
+}
+
+.red {
+    background-color: $red
+}
+
+.yellow {
+    background-color: $yellow
+}
+
+.dark {
+    background-color: $dark
+}
+
+.light {
+    background-color: $light
+}
+
+.grey {
+    background-color: $grey
+}
+
+.projectHead {
+    height: $product-details--height;
+}
+
+.projectHead .picture {
+    margin-bottom: 6%;
+    margin-top: 6%;
+    width: $product-details--image-width;
+}
+
+.projectHead .picture.right {
+    margin-right: $product-details--image-margin-right;
+}
+
+.projectHead .text {
+    position: absolute;
+    width: 49%;
+}
+
+.projectHead .centerText {
+    margin: 0 auto;
+    padding-bottom: 24%;
+    padding-top: 6%;
+    text-align: center;
+    width: 55%;
+}
+
+.projectObj {
+    color: $font-color--projectObj;
+    display: block;
+    height: $product-row--height;
+}
+
+.projectObj .name {
+    float: left;
+    font-size: $font-size--xxl;
+    font-weight: 100;
+    position: absolute;
+    width: 42%;
+}
+
+.projectObj .img {
+    float: right;
+    margin-bottom: $product-row--image-margin;
+    margin-top: $product-row--image-margin;
+    width: $product-row--image-width;
+    max-height: $product-row--height;
+    max-width: $product-row--image-max-width;
+    max-height: $product-row--image-max-height;
+}

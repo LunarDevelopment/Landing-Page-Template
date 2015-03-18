@@ -1,0 +1,85 @@
+//brand colours
+$blue: #2237FF;
+$turquoise: #00aedb;
+$purple: #a200ff;
+$green: #58ff00;
+$pink: #d41243;
+$red: #FF1300;
+$orange: #f47835;
+$yellow: #FFBA00;
+
+$dark: #333;
+$light: #fff;
+$grey: #ccc;
+
+//typography
+$font-family--primary: "Oswald", sans-serif;
+$font-family--secondary: 'Roboto', sans-serif;
+
+$font-color--dark: $dark;
+$font-color--light: $light;
+$font-color--projectObj: $light;
+$font-color--footer: $light;
+
+//site wide vars 
+$background--light: $grey;
+$background--dark: $dark;
+$page--background: $grey; // this is also the footer colour and best set as nav background because of animations between pages
+
+$generic-image--width: 75%;
+$generic-image--padding: 10px;
+
+// navigation menu 
+$nav-menu--background:$grey;
+$nav-menu--active : $pink;
+$nav-menu--font-color: $light;
+$nav-menu--font-color-active: $pink;
+$nav-menu--height-l:110px;
+$nav-menu--height-m:80px;
+$nav-menu--height-s:70px;
+
+//sub page elements
+$sub-page--banner: $turquoise;
+$sub-page--banner-padding: 45px; 
+
+// footer 
+$footer-text--padding: 50px; // multiply this value by 2 to get the size of the footer in height.
+
+// buttons
+$btn-color--primary: $pink;
+
+//text area
+$text-area--background-light: $light;
+$text-area--background-dark: $dark;
+$text-area--font-light: $light;
+$text-area--font-dark: $dark; 
+$text-area--focus-color: $orange; 
+    
+// spacing
+$full-space: 40px;
+$half-space: 20px;
+
+// font sizing
+$font-size--xs: 0.5em;
+$font-size--sm: 1em;
+$font-size--xm: 1.3em;
+$font-size--md: 1.5em;
+$font-size--lg: 2.5em;
+$font-size--xl: 3.5em;
+$font-size--xxl: 4.5em;
+
+//main page
+$product-row--height: 350px;
+$product-row--image-height : 20%;
+$product-row--image-width : 20%;
+$product-row--image-max-width: 200px;
+$product-row--image-max-height: 100%;
+$product-row--image-margin: 5%;
+
+//sub page
+$product-details--height: 1000px;
+$product-details--image-height : 20%;
+$product-details--image-width : 20%;
+$product-details--image-margin-right: 0%;
+
+

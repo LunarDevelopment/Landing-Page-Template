@@ -38,6 +38,7 @@ This boilerplate uses the latest versions of the following libraries:
 - [SASS](http://sass-lang.com/)
 - [Gulp](http://gulpjs.com/)
 - [Browserify](http://browserify.org/)
+- [Bootstrap-angular](https://angular-ui.github.io/bootstrap/)
 
 
 Along with many Gulp libraries (these can be seen in either `package.json`, or at the top of each task in `/gulp/tasks/`).
